@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naila Febriana Wahyudi</title>
+    <link rel="icon" type="image/png" href="favicon naila.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #6dd5ed, #2193b0);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+            margin-top: -90px;
+        }
+
+        .about-me {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0.5em 0;
+        }
+
+        .social-media {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-media a {
+            color: #fff;
+            font-size: 28px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            transform: scale(1.2);
+            color: #ffdd57;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            .profile-pic {
+                width: 140px;
+                height: 140px;
+                margin-top: -70px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            .about-me,
+            footer {
+                padding: 15px;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img class="profile-pic" src="foto profil naila.jpg" alt="Naila Febriana Wahyudi">
+        <h1>Naila Febriana Wahyudi</h1>
+        <p><strong>NIM:</strong> 1202223023 | <strong>Program Studi:</strong> S1 Sistem Informasi</p>
+    </header>
+
+    
+
+    <h3>Connect with Me</h3>
+    <p>
+        <a href="https://www.instagram.com/nailafbrn_?igsh=MWQwcDdlbDR3YTR1Yg%3D%3D&utm_source=qr" target="_blank">Instagram</a> |
+        <a href="https://www.linkedin.com/in/naila-febriana-w/ " target="_blank">LinkedIn</a> |
+        <a href="https://github.com/nailafbrn" target="_blank">GitHub</a>
+    </p>
+</section>
+
+
+    <footer>
+        <p>© 2024 Naila Febriana Wahyudi</p>
+        <p id="date-time"></p>
+    </footer>
+
+    <script>
+        // Display the current date and time
+        const dateTimeElement = document.getElementById('date-time');
+        const now = new Date();
+        dateTimeElement.textContent = `Current Date: ${now.toLocaleDateString()} - Time: ${now.toLocaleTimeString()}`;
+    </script>
+</body>
+
+</html>
